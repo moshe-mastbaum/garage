@@ -2,6 +2,10 @@ import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
 import NewCustomer from "./views/NewCustomer.vue";
+import costumer from "./views/costumer.vue";
+import car from "./views/car.vue";
+
+
 
 Vue.use(Router);
 
@@ -18,7 +22,20 @@ export default new Router({
       path: "/newcustomer",
       name: "newcustomer",
       component: NewCustomer
-    },    
+    },
+    {
+      path: "/costumer",
+      name: "costumer",
+      component: costumer
+    }, 
+    {
+      path: "/car/:carnumber",
+      name: "car",
+      props: true,
+      component: car
+    },   
+    
+
     {
       path: "/about",
       name: "about",

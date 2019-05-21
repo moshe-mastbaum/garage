@@ -31,12 +31,15 @@
    name: "newcustomer",
    data() {
      return {
-       input1: '',   input2: ''
+       input1: '',
+       input2: ''
      }
-   }
- }
- function insertcustomer() {
-   customers.push({name:this.input1,id:this.input2,car:[],bill: 0})
+   },
+    methods: {
+      insertcustomer() {
+        this.$root.customers.push({name:this.input1,id:this.input2,car:[],bill: 0})
+      }
+    }
  }
  </script>
 

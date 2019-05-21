@@ -1,6 +1,6 @@
 <template>
-  <div class="costumer">
-    <h1></h1>
+  <div class="costumer" >
+    <h1>שם לקוח</h1>
 
   </div>
 </template>

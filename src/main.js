@@ -5,7 +5,12 @@ import './plugins/element.js'
 
 Vue.config.productionTip = false;
 
+import { customers } from '@/data/data.js'
+
 new Vue({
+  data: {
+    customers
+  },
   router,
   render: h => h(App)
 }).$mount("#app");

@@ -3,21 +3,25 @@
     <img alt="Vue logo" src="../assets/logo.png">
     <h1>ברוכים הבאים למוסך גו-קוד שדרות</h1>
     <p>
+      <router-link to="/costumer" >
       <el-button @click="visible = true">חפש</el-button>
+      </router-link>
       <el-input
         style="color:blue ;width:300px"
         placeholder="שם לקוח"
         prefix-icon="el-icon-search"
-        v-model="input2"
+        v-model="costumername"
       ></el-input>
     </p>
     <p>
+       <router-link :to="`/car/${carnumber}`">
       <el-button @click="visible = true">חפש</el-button>
+      </router-link>
       <el-input
         style="color:red ;width:300px"
         placeholder="מספר רכב"
         prefix-icon="el-icon-search"
-        v-model="input2"
+        v-model="carnumber"
       ></el-input>
     </p>
       <router-link to="/newcustomer" >
@@ -29,9 +33,14 @@
 
 <script>
 // @ is an alias to /src
-import { customers } from '../data/data.js'
 
 export default {
-  name: "home"
+  name: "home",
+  data() {
+    return {
+      costumername: '',
+      carnumber: ''
+    }
+  }
 };
 </script>
