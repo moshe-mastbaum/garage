@@ -4,7 +4,7 @@ export const costumers = [
     { name: "אבי לוי ", id: "000000002", car: ["003"], bill: "0" }
   ];
 export const cars = [
-    { num: "001", owner: "000000001", firm: "subaro", tipulim: [0,1] },
+    { num: "001", owner: "000000001", firm: "subaro", tipulim: [1,2] },
     { num: "002", owner: "000000001", firm: "ford", tipulim: [] },
     { num: "003", owner: "000000002", firm: "toyota", tipulim: [] }
   ];
