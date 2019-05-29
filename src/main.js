@@ -5,11 +5,11 @@ import './plugins/element.js'
 
 Vue.config.productionTip = false;
 
-import { customers } from '@/data/data.js'
+import { costumers,cars,tipulim } from '@/data/data.js'
 
 new Vue({
   data: {
-    customers
+    costumers,cars,tipulim
   },
   router,
   render: h => h(App)

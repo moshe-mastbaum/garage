@@ -24,8 +24,9 @@ export default new Router({
       component: NewCustomer
     },
     {
-      path: "/costumer",
+      path: "/costumer/:costumername",
       name: "costumer",
+      props: true,
       component: costumer
     }, 
     {
