@@ -4,6 +4,7 @@ import Home from "./views/Home.vue";
 import NewCustomer from "./views/NewCustomer.vue";
 import costumer from "./views/costumer.vue";
 import car from "./views/car.vue";
+import tipul from "./views/tipul.vue";
 
 
 
@@ -22,6 +23,12 @@ export default new Router({
       path: "/newcustomer",
       name: "newcustomer",
       component: NewCustomer
+    },
+    {
+      path: "/tipul/:tipulNumber",
+      name: "tipul",
+      props: true,
+      component: tipul
     },
     {
       path: "/costumer/:costumername",
