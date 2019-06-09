@@ -2,9 +2,10 @@ import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
 import NewCustomer from "./views/NewCustomer.vue";
-import costumer from "./views/costumer.vue";
+import customer from "./views/customer.vue";
 import car from "./views/car.vue";
 import tipul from "./views/tipul.vue";
+import test from "./views/test.vue";
 
 
 
@@ -31,10 +32,10 @@ export default new Router({
       component: tipul
     },
     {
-      path: "/costumer/:costumername",
-      name: "costumer",
+      path: "/customer/:customername",
+      name: "customer",
       props: true,
-      component: costumer
+      component: customer
     }, 
     {
       path: "/car/:carnumber",
@@ -42,7 +43,11 @@ export default new Router({
       props: true,
       component: car
     },   
-    
+    {
+      path: "/test",
+      name: "test",
+      component: test
+     },
 
     {
       path: "/about",

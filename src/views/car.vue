@@ -2,7 +2,7 @@
   <div class="car">
     <div style="margin-left:38%;margin-bottom:2%; width:24%;">
         <el-button @click="insertTipul()" style="color:red; width:33%">הוסף טיפול</el-button>     
-      <router-link :to="`/costumer/${ownerInArr.name}`">
+      <router-link :to="`/customer/${ownerInArr.name}`">
         <el-button  style="color:blue;width:33%">עבור לדף לקוח</el-button>
       </router-link>
       <router-link :to="`/`" >
@@ -35,7 +35,7 @@
   
     <!-- <div>{{carInArr}}</div>
     <div>{{ownerInArr}}</div>-->
-    <!-- <div>{{$root.costumers[0]}}</div> -->
+    <!-- <div>{{$root.customers[0]}}</div> -->
     <!-- <div>{{$root.cars[findcar (carnumber)]}}</div> -->
   </div>
 </template>
@@ -55,19 +55,14 @@ export default {
       return car;
     },
     ownerInArr() {
-      let owner = this.$root.costumers.find(
+      let owner = this.$root.customers.find(
         owner => owner.id === this.carInArr.owner
       );
       return owner;
-    },
-    // tipulInArr(n)
-    // {
-    //   let tipul = this.$root.tipulim.find(tipul => tipul.id === n)
-    //   return tipul;
-    // },
+    },    
     tipulimInCar() {
-      const tipulim = this.carInArr.tipulim;
-      return this.$root.tipulim.filter(tipul => tipulim.includes(tipul.id));
+      const tipuli = this.carInArr.tipulim;
+      return this.$root.tipulim.filter(tipul => tipuli.includes(tipul.id));
     }
   },
   methods: {

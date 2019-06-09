@@ -1,10 +1,24 @@
 
-export const costumers = [
-    { name: "יוסי כהן", id: "000000001", car: ["001", "002"], bill: "800" },
-    { name: "אבי לוי ", id: "000000002", car: ["003"], bill: "0" }
+export const customers = [
+  {
+    name: "yosi cohen",
+    id: "123456",
+    car: ["001", "002"],
+    bill: "800",
+    tel: "081234567",
+    adress: "בן גוריון 2 שדרות"
+  },
+  {
+    name: "אבי לוי",
+    id: "000000002",
+    car: ["003"],
+    bill: "0",
+    tel: "081114567",
+    adress: "אברהם אבינו 2 שדרות"
+  }
   ];
 export const cars = [
-    { num: "001", owner: "000000001", firm: "סוברו אימפריזה", tipulim: [1,2] },
+  { num: "001", owner: "000000001", firm: "סוברו אימפריזה", tipulim: [1, 2] },
     { num: "002", owner: "000000001", firm: "פורד פוקוס", tipulim: [] },
     { num: "003", owner: "000000002", firm: "טויוטה קורולה", tipulim: [] }
   ];
@@ -12,12 +26,12 @@ export const tipulim = [
     {
       id: 1,
       datein: "2019-01-08",
-      dateout: "3/1/2019",
+      dateout: "2019-01-11",
       carNum: "001",
       problem: "ברקס",
       price: "500",
       paid: "0",
-      comments: " "
+      comments: "אשרי יושבי ביתך  עוד יהללוך סלה  אשרי העם שככה לו אשרי  "
     },
     {
       id: 2,

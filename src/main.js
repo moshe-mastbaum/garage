@@ -5,11 +5,11 @@ import "./plugins/element.js";
 
 Vue.config.productionTip = false;
 
-import { costumers, cars, tipulim, lastTipulid } from "@/data/data.js";
+import { customers, cars, tipulim, lastTipulid } from "@/data/data.js";
 
 new Vue({
   data: {
-    costumers,
+    customers,
     cars,
     tipulim,
     lastTipulid
