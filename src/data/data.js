@@ -1,8 +1,10 @@
 
-export const customers = [
+export const customers =
+[
+ 
   {
     name: "yosi cohen",
-    id: "123456",
+    id: "123456789",
     car: ["001", "002"],
     bill: "800",
     tel: "081234567",
@@ -18,8 +20,8 @@ export const customers = [
   }
   ];
 export const cars = [
-  { num: "001", owner: "000000001", firm: "סוברו אימפריזה", tipulim: [1, 2] },
-    { num: "002", owner: "000000001", firm: "פורד פוקוס", tipulim: [] },
+  { num: "001", owner: "123456789", firm: "סוברו אימפריזה", tipulim: [1, 2] },
+    { num: "002", owner: "123456789", firm: "פורד פוקוס", tipulim: [] },
     { num: "003", owner: "000000002", firm: "טויוטה קורולה", tipulim: [] }
   ];
 export const tipulim = [

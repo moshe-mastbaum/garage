@@ -47,22 +47,29 @@ export default {
   name: "car",
   props: ["carnumber"],
   data () {
-    return { tipulNamber: '1'}
+    return { 
+      cars:[this.$axios.get('http://localhost:3000/cars').then((response) => this.cars = response.data)],
+      customers:[this.$axios.get('http://localhost:3000/customers').then((response) => this.customers = response.data)],
+      tipulim:[this.$axios.get('http://localhost:3000/customers').then((response) => this.tipulim = response.data)],
+      tipulNamber: '1'
+    
+    
+    }
   },
   computed: {
     carInArr() {
-      let car = this.$root.cars.find(car => car.num === this.carnumber);
+      let car = this.cars.find(car => car.num === this.carnumber);
       return car;
     },
     ownerInArr() {
-      let owner = this.$root.customers.find(
+      let owner = this.customers.find(
         owner => owner.id === this.carInArr.owner
       );
       return owner;
     },    
     tipulimInCar() {
       const tipuli = this.carInArr.tipulim;
-      return this.$root.tipulim.filter(tipul => tipuli.includes(tipul.id));
+      return this.tipulim.filter(tipul => tipuli.includes(tipul.id));
     }
   },
   methods: {
